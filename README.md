@@ -1,15 +1,16 @@
 Role Name
 =========
-wordpress-common
+gwenlei.wordpress-common
 
 Requirements
 ------------
-none
+ubuntu16.04 xenial
 
 Role Variables
 --------------
 defaults/main.yml
 
+cache_valid_time: 9600
 
 Dependencies
 ------------
@@ -20,7 +21,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: wordpress-common }
+         - { role: gwenlei.wordpress-common }
 
 License
 -------
